@@ -43,8 +43,6 @@ class PatternTree:
                 new_sym = reg.merge(sym)
                 zp.parent.symbols
             
-            
-        
         zp = SymbolZipper.leaf_walker(self.root,op_func=op_func)
         
         pass

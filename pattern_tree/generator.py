@@ -59,16 +59,77 @@ class SymbolGenerator:
     def __str__(self):
         return self.name
 
-uuid_generator = SymbolGenerator("UUID",r"\w{8}-\w{4}-\w{4}-\w{4}-\w{12}","{}")
-integer_generator = SymbolGenerator("INT",r"([\d]+)", "{}", at_branch=True)
-decimal_generator = SymbolGenerator("DEC",r"([\d]+\.[\d]+)","{}", at_branch=True)
-# enclosed_generator = SymbolGenerator("ENC",r"[\{|\(|\[]([\w]+)[\})\]]","{}")
-enclosed_generator = SymbolGenerator("ENC",r"\[\w+\]|\(\w+\)|\(\w+\)|<\w+>","{}")
-quote_generator = SymbolGenerator("QUO",r"\"\w+\"|\'\w+\'","{}")
+# Atomic patterns - fundamental units that can't be decomposed further
+uuid_generator = SymbolGenerator(
+    "UUID",
+    r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
+    "{}"
+)
+
+# Numeric patterns with non-capturing groups and word boundaries
+integer_generator = SymbolGenerator(
+    "INT",
+    r"\b(?<!\.)(\d+)(?!\.\d)\b",  # Integer not part of decimal
+    "{}",
+    at_branch=True
+)
+
+decimal_generator = SymbolGenerator(
+    "DEC",
+    r"\b(\d+\.\d+)\b",  # Decimal with word boundaries
+    "{}",
+    at_branch=True
+)
+
+# Structural patterns - capture content AND delimiters
+enclosed_generator = SymbolGenerator(
+    "ENC",
+    r"(?:\[[^\]]*\]|\([^)]*\)|\{[^}]*\}|<[^>]*>)",  # Non-greedy, captures full structure
+    "{}"
+)
+
+quote_generator = SymbolGenerator(
+    "QUO",
+    r'(?:"[^"]*"|\'[^\']*\')',  # Captures full quoted strings
+    "{}"
+)
+
+# Pattern for identifiers (variable names, etc)
+identifier_generator = SymbolGenerator(
+    "ID",
+    r"\b[a-zA-Z_][a-zA-Z0-9_]*\b",
+    "{}"
+)
+
+# Pattern for timestamps (ISO-like)
+timestamp_generator = SymbolGenerator(
+    "TS",
+    r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?",
+    "{}"
+)
+
+# Pattern for IPv4 addresses
+ipv4_generator = SymbolGenerator(
+    "IP4",
+    r"\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b",
+    "{}"
+)
+
+# Pattern for hex values
+hex_generator = SymbolGenerator(
+    "HEX",
+    r"0x[0-9a-fA-F]+\b",
+    "{}"
+)
 
 generators = {
-    uuid_generator.name:uuid_generator,
-    integer_generator.name:integer_generator,
-    decimal_generator.name:decimal_generator,
-    enclosed_generator.name:enclosed_generator,
+    uuid_generator.name: uuid_generator,
+    integer_generator.name: integer_generator,
+    decimal_generator.name: decimal_generator,
+    enclosed_generator.name: enclosed_generator,
+    quote_generator.name: quote_generator,
+    identifier_generator.name: identifier_generator,
+    timestamp_generator.name: timestamp_generator,
+    ipv4_generator.name: ipv4_generator,
+    hex_generator.name: hex_generator,
 }
