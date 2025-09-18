@@ -1,0 +1,565 @@
+{
+   "repr_compact": "A[B[INT I INT I INT H INT F INT F DEC D] G[INT I INT I INT H INT F INT F DEC L UUID] K[INT I INT I INT H INT F INT F DEC C] M[INT I INT I INT H INT F INT F DEC N] O[INT I INT I INT H INT F INT F DEC P]]",
+   "repr_tokens": "100277[100278[100282 100288 100282 100288 100282 100286 100282 100289 100282 100289 100279 100281] 100290[100282 100288 100282 100288 100282 100286 100282 100289 100282 100289 100279 100294 100291] 100299[100282 100288 100282 100288 100282 100286 100282 100289 100282 100289 100279 100301] 100306[100282 100288 100282 100288 100282 100286 100282 100289 100282 100289 100279 100308] 100313[100282 100288 100282 100288 100282 100286 100282 100289 100282 100289 100279 100315]]",
+   "tree_len": 17,
+   "num_symbols": 17,
+   "root_symbol": {
+      "name": "A",
+      "value": "",
+      "is_root": true,
+      "divisible": false,
+      "repeats": 1,
+      "token_index": 100277,
+      "tokens": "35190,33948,37063,519,8,510,5261,5787,46594,3003,389,35190,33948,369,13500,35190,33948,37063,519,8,510,5261,5787,32497,1113,35190,33948,369,13500,11,220,35190,33948,37063,519,8,510,6775,5787,28757,35190,33948,3016,1131,35190,33948,37063,519,8,510,5261,5787,3940,11618,35190,33948,37063,519,8,510,6775,5787,50586,69030,311,48657,41436,519,69271",
+      "children": [
+         {
+            "name": "B",
+            "value": "2025-09-16T14:08:49.569773 TerminalBridge(grant) [DEBUG]: Completed init on TerminalBridge for grant",
+            "is_root": false,
+            "divisible": true,
+            "repeats": 1,
+            "token_index": 100278,
+            "tokens": "35190,33948,37063,519,8,510,5261,5787,46594,3003,389,35190,33948,369,13500",
+            "children": [
+               {
+                  "name": "INT",
+                  "value": "2025",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "09",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "16",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "H",
+                  "value": "T",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100286
+               },
+               {
+                  "name": "INT",
+                  "value": "14",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "INT",
+                  "value": "08",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "DEC",
+                  "value": "49.569773",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100279
+               },
+               {
+                  "name": "D",
+                  "value": " TerminalBridge(grant) [DEBUG]: Completed init on TerminalBridge for grant",
+                  "is_root": false,
+                  "divisible": true,
+                  "repeats": 1,
+                  "token_index": 100281,
+                  "tokens": "35190,33948,37063,519,8,510,5261,5787,46594,3003,389,35190,33948,369,13500"
+               }
+            ]
+         },
+         {
+            "name": "G",
+            "value": "2025-09-16T14:08:49.569935 TerminalBridge(grant) [DEBUG]: Initiating TerminalBridge for grant, 01234567-abcd-8910-zyxw-1z2y3x4w5v6u",
+            "is_root": false,
+            "divisible": true,
+            "repeats": 1,
+            "token_index": 100290,
+            "tokens": "35190,33948,37063,519,8,510,5261,5787,32497,1113,35190,33948,369,13500,11,220",
+            "children": [
+               {
+                  "name": "INT",
+                  "value": "2025",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "09",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "16",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "H",
+                  "value": "T",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100286
+               },
+               {
+                  "name": "INT",
+                  "value": "14",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "INT",
+                  "value": "08",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "DEC",
+                  "value": "49.569935",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100279
+               },
+               {
+                  "name": "L",
+                  "value": " TerminalBridge(grant) [DEBUG]: Initiating TerminalBridge for grant, ",
+                  "is_root": false,
+                  "divisible": true,
+                  "repeats": 1,
+                  "token_index": 100294,
+                  "tokens": "35190,33948,37063,519,8,510,5261,5787,32497,1113,35190,33948,369,13500,11,220"
+               },
+               {
+                  "name": "UUID",
+                  "value": "01234567-abcd-8910-zyxw-1z2y3x4w5v6u",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100291
+               }
+            ]
+         },
+         {
+            "name": "K",
+            "value": "2025-09-16T14:08:49.592523 TerminalBridge(grant) [INFO]: Starting TerminalBridge client...",
+            "is_root": false,
+            "divisible": true,
+            "repeats": 1,
+            "token_index": 100299,
+            "tokens": "35190,33948,37063,519,8,510,6775,5787,28757,35190,33948,3016,1131",
+            "children": [
+               {
+                  "name": "INT",
+                  "value": "2025",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "09",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "16",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "H",
+                  "value": "T",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100286
+               },
+               {
+                  "name": "INT",
+                  "value": "14",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "INT",
+                  "value": "08",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "DEC",
+                  "value": "49.592523",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100279
+               },
+               {
+                  "name": "C",
+                  "value": " TerminalBridge(grant) [INFO]: Starting TerminalBridge client...",
+                  "is_root": false,
+                  "divisible": true,
+                  "repeats": 1,
+                  "token_index": 100301,
+                  "tokens": "35190,33948,37063,519,8,510,6775,5787,28757,35190,33948,3016,1131"
+               }
+            ]
+         },
+         {
+            "name": "M",
+            "value": "2025-09-16T14:08:49.592650 TerminalBridge(grant) [DEBUG]: started processes",
+            "is_root": false,
+            "divisible": true,
+            "repeats": 1,
+            "token_index": 100306,
+            "tokens": "35190,33948,37063,519,8,510,5261,5787,3940,11618",
+            "children": [
+               {
+                  "name": "INT",
+                  "value": "2025",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "09",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "16",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "H",
+                  "value": "T",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100286
+               },
+               {
+                  "name": "INT",
+                  "value": "14",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "INT",
+                  "value": "08",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "DEC",
+                  "value": "49.592650",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100279
+               },
+               {
+                  "name": "N",
+                  "value": " TerminalBridge(grant) [DEBUG]: started processes",
+                  "is_root": false,
+                  "divisible": true,
+                  "repeats": 1,
+                  "token_index": 100308,
+                  "tokens": "35190,33948,37063,519,8,510,5261,5787,3940,11618"
+               }
+            ]
+         },
+         {
+            "name": "O",
+            "value": "2025-09-16T14:08:49.593102 TerminalBridge(grant) [INFO]: Connected mediator to sockets/grant.sock",
+            "is_root": false,
+            "divisible": true,
+            "repeats": 1,
+            "token_index": 100313,
+            "tokens": "35190,33948,37063,519,8,510,6775,5787,50586,69030,311,48657,41436,519,69271",
+            "children": [
+               {
+                  "name": "INT",
+                  "value": "2025",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "09",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "I",
+                  "value": "-",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100288
+               },
+               {
+                  "name": "INT",
+                  "value": "16",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "H",
+                  "value": "T",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100286
+               },
+               {
+                  "name": "INT",
+                  "value": "14",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "INT",
+                  "value": "08",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100282
+               },
+               {
+                  "name": "F",
+                  "value": ":",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100289
+               },
+               {
+                  "name": "DEC",
+                  "value": "49.593102",
+                  "is_root": false,
+                  "divisible": false,
+                  "repeats": 1,
+                  "token_index": 100279
+               },
+               {
+                  "name": "P",
+                  "value": " TerminalBridge(grant) [INFO]: Connected mediator to sockets/grant.sock",
+                  "is_root": false,
+                  "divisible": true,
+                  "repeats": 1,
+                  "token_index": 100315,
+                  "tokens": "35190,33948,37063,519,8,510,6775,5787,50586,69030,311,48657,41436,519,69271"
+               }
+            ]
+         }
+      ]
+   }
+}

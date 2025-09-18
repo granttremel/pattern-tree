@@ -1,7 +1,12 @@
 
 from typing import List
 
-from pattern_tree.pattern_tree import encode_string, decode_string, integer_generator, decimal_generator, Symbol, SymbolGenerator
+from pattern_tree.symbol import encode_string, decode_string, Symbol
+from pattern_tree.generator import SymbolGenerator, generators
+uuid_gen=generators.get("UUID")
+decimal_generator=generators.get("DEC")
+integer_generator=generators.get("INT")
+enc_gen = generators.get("ENC")
 
 import json
 import re
@@ -130,12 +135,12 @@ def multiple_extract_split(gens, input_symbols):
         
     return all_syms, input_symbols
 
-def test_extract_divide(root_symbol, gen):
+def test_extract_divide(root_symbol, gen, at_branch=False):
     syms = gen.extract(root_symbol)
     print(syms)
     for sym in syms:
         # root_symbol.divide(sym, at_root=False)
-        root_symbol.divide(sym, at_root=True)
+        root_symbol.divide(sym, at_branch=at_branch)
         # root_symbol // sym
     
     return syms
@@ -148,18 +153,19 @@ def test_symbol_names():
         
     pass
 
+def test_get_symbol():
+    
+    sym1 = Symbol.get_symbol(":")
+    sym2 = Symbol.get_symbol(":")
+    sym3 = Symbol.get_symbol(":")
+    
+    print(repr(sym1),repr(sym2),repr(sym3))
+    
+
 def main():
     
     test_str = "hello this is an example of natural language"
-    
     # root_symbol, syms = test_extract_divide(test_str, decimal_generator)
-    
-    # print(root_symbol)
-    # print(syms)
-    
-    # test_symbol_names()
-    
-    Symbol._clear()
     
     
     test_log_file = "./data/20250916_TerminalBridge(grant).jsonl"
@@ -167,21 +173,31 @@ def main():
     formatter = "{timestamp} {component} [{level}]: {message}"
     
     test_logs = load_log_file(test_log_file, start=1, end=2, formatter=formatter)
-    
-    # test_logs = ["this is a better test string 2025 and i hope it works 40.91921 okay here goes"]
-    
+
+    # grant = Symbol.get_symbol("grant")
+
     for test_str in test_logs:
-        root_symbol = Symbol.get_symbol(test_str)
-        syms = test_extract_divide(root_symbol, decimal_generator)
+        root_symbol = Symbol.get_symbol(test_str, is_root=True)
+        
+        syms = test_extract_divide(root_symbol, uuid_gen, at_branch=False)
         # print(repr(root_symbol))
-        syms = test_extract_divide(root_symbol, integer_generator)
-        print(repr(root_symbol))
-        # print('hi')
-
-
-        # Symbol._clear()
+        # root_symbol.print_tree()
         
+        syms = test_extract_divide(root_symbol, enc_gen)
+        # print(repr(root_symbol))
+        root_symbol.print_tree()
         
+        # syms = test_extract_divide(root_symbol, decimal_generator, at_branch=True)
+        # # print(repr(root_symbol))
+        # # root_symbol.print_tree()
+        
+        # syms = test_extract_divide(root_symbol, integer_generator, at_branch=True)
+    
+    print(repr(root_symbol))
+    root_symbol.print_tree()
+    
+    
+    
 if __name__=="__main__":
     main()
 
